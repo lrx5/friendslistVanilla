@@ -298,15 +298,29 @@ nav {
     }
 
     .card {
-        width: 600px;
+        width: 90vw;
         height: 200px;
         background-color:gray;
         z-index: 1;
         border-radius: 10px;
     }
 
+    .card .main-img{
+        display: flex;
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.10);
+        border-radius: 65536px;
+        /*border: 8px #1A1D36 solid;*/
+        margin-left: 25px;
+        filter: grayscale(100%);
+    }
+
     .card-content p{
-        max-width: 300px;
+        max-width: 250px;
     
     }
 
@@ -320,13 +334,13 @@ nav {
     }
 
     .heart-meter {
-        width:300px;
+        width:200px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         align-content: center;
-        gap: 10px;
+        gap: 5px;
     }
 
     .heart-meter img{
