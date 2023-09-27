@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script src="script.js"></script>
+        <title>Vanilla List</title>
+    </head>
+
+    <body>
+        <!-- Nav container -->
+        <div class="containerone">
+            <h2 class="lrxs-main">LRXS</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#in">In</a>
+                    </li>
+                    <li>
+                        <a href="#progress">Progress</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <div class="header">
+            <h1>The friends that I truly care about</h1>
+            <p>If you see yourself here, then you are definitely kept in mind.</p>
+        </div>
+
+        <div class="container-sorter">
+            <button onclick="sortCardsValueLH()" id="sort-button">Lowest To Highest</button>
+            <button onclick="sortCardsValueHL()" id="sort-button">Highest To Low</button>
+            <button onclick="sortCardsDateON()" id="sort-button">Oldest To Newest</button>
+            <button onclick="sortCardsDateNO()" id="sort-button">Newest To Oldest</button>
+        </div>
+
+        <!-- Main Body -->
+        <div id="containertwo" class="containertwo">
+            <div class="card glass" data-value="4" data-bytime="201602">
+                <img class="main-img" src="images\maysi.jpg"/>
+                <div class="card-content">
+                    <h2>ケニー 姫</h2>
+                    <p>Asks for help and also offers help, kind of a mutual relationship. She checks up on her old friends from time to time which is nice.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="10" data-bytime="201101">
+                <img class="main-img" src="images\buzenbo.jpg"/>
+                <div class="card-content">
+                    <h2>Buzenbo Tengu</h2>
+                    <p>Dude always stayed when it mattered. From simply hanging out to stressful thesis work. He is the greatest friend one could have.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="8" data-bytime="201803">
+                <img class="main-img" src="images\daydream.jpg"/>
+                <div class="card-content">
+                    <h2>DayDream</h2>
+                    <p>Hits the dance floor hard making everyone's mood around him skyrocket with his awesome yet funny performance.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="10" data-bytime="202001">
+                <img class="main-img" src="images\drinnn.jpg"/>
+                <div class="card-content">
+                    <h2>Drinnnn</h2>
+                    <p>The epitome example of an intellectual, the kindest, most patient listener I have ever known. 10/10 would take a bullet for him.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="201901">
+                <img class="main-img" src="images\eastgamer.jpg"/>
+                <div class="card-content">
+                    <h2>EastGamer</h2>
+                    <p>Outgoing person who brightens up every discord call ever, he loves to help other people with game related tasks.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="8" data-bytime="202098">
+                <img class="main-img" src="images\echo.jpg"/>
+                <div class="card-content">
+                    <h2>Echo</h2>
+                    <p>A generous, good natured guy paired with similar traits, fights his own battle to be a good game developer one day.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="4" data-bytime="202303">
+                <img class="main-img" src="images\ej.jpg"/>
+                <div class="card-content">
+                    <h2>EJ</h2>
+                    <p>A movie connoisseur, a fun person to hang out with, whether be it playing games or watching movies.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="8" data-bytime="201804">
+                <img class="main-img" src="images\ervs.jpg"/>
+                <div class="card-content">
+                    <h2>Ervs</h2>
+                    <p>His leadership skills, together with his genuine rapport makes him a close friend you can rely on.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="8" data-bytime="201502">
+                <img class="main-img" src="images\iamrazc.jpg"/>
+                <div class="card-content">
+                    <h2>IAMRAZC</h2>
+                    <p>One word best describe him and that is "Chill". A down to earth person with the eagerness to learn. I mentored for him once.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="3" data-bytime="202099">
+                <img class="main-img" src="images\Js.jpg"/>
+                <div class="card-content">
+                    <h2>Js</h2>
+                    <p>Enthusiastic and overall positive dude who complements greatly with anyone in a group, shines well in his other friend group.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="2" data-bytime="202302">
+                <img class="main-img" src="images\kajell.jpg"/>
+                <div class="card-content">
+                    <h2>Kajell</h2>
+                    <p>A friend of Nyx, she is also a chill gamer who plays casual games like Phasmophobia.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="6" data-bytime="202009">
+                <img class="main-img" src="images\kimpoy.jpg"/>
+                <div class="card-content">
+                    <h2>Kimpoy</h2>
+                    <p>Acts like my therapist sometimes when things get dark, his cheery and comedic personality never fails to amaze me.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="9" data-bytime="201801">
+                <img class="main-img" src="images\kyrgzten.jpg"/>
+                <div class="card-content">
+                    <h2>Kyrgzten</h2>
+                    <p>My first friend in college whom stayed with our group until the end. He is a great companion and the smartest guy I know.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="9" data-bytime="201802">
+                <img class="main-img" src="images\lunacy.jpg"/>
+                <div class="card-content">
+                    <h2>Lunacy</h2>
+                    <p>A great and true buddy that I enjoy spending time with overall. Listens to my experiences and shares his side of the story aswell.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="202002">
+                <img class="main-img" src="images\matcha.jpg"/>
+                <div class="card-content">
+                    <h2>Matchakim</h2>
+                    <p>An adventurer who likes to experience new things with the group. She cares for her friends and treats them like family.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="4" data-bytime="201102">
+                <img class="main-img" src="images\migi.jpg"/>
+                <div class="card-content">
+                    <h2>Migi</h2>
+                    <p>My best friend at grade school, but lost contact for like a decade. Glad to catch up with you man.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="202003">
+                <img class="main-img" src="images\mondel.jpg"/>
+                <div class="card-content">
+                    <h2>Mondelcastillo</h2>
+                    <p>Proud and attentive, empathic person with a colorful personality. That single hug is what kept me going. Thank you.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="201805">
+                <img class="main-img" src="images\myrjan.jpg"/>
+                <div class="card-content">
+                    <h2>Myrjan</h2>
+                    <p>Fallen comrade whom we lost contact with, in order to help the family business. Both a gentleman and an admirer of beauty.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="8" data-bytime="201501">
+                <img class="main-img" src="images\nekotyan.jpg"/>
+                <div class="card-content">
+                    <h2>NekoTyan</h2>
+                    <p>His kind personality and endearing company is one of the most joyful things you will encounter, his Mom also cooks good sisig.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="2" data-bytime="202301">
+                <img class="main-img" src="images\nyx.jpg"/>
+                <div class="card-content">
+                    <h2>Nyx</h2>
+                    <p>Chill gamer who shuns pirating games and supports indie developers. Plays Phasmophobia and Stardew.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="201808">
+                <img class="main-img" src="images\secu.jpg"/>
+                <div class="card-content">
+                    <h2>Secu</h2>
+                    <p>The one and only royal with the name of power, uses his expertise on identifying weaknesses in cybersecurity.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="6" data-bytime="201601">
+                <img class="main-img" src="images\seiichi.jpg"/>
+                <div class="card-content">
+                    <h2>Seiichi</h2>
+                    <p>Our hardworking streamer with a huge social energy capable of livening up dead air in games into an awesome one.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="6" data-bytime="201401">
+                <img class="main-img" src="images\tigris.jpg"/>
+                <div class="card-content">
+                    <h2>Tigris</h2>
+                    <p>Our interests in tanks and world war history makes our friendship battle hardened; tough as nails.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="7" data-bytime="201503">
+                <img class="main-img" src="images\wave33.jpg"/>
+                <div class="card-content">
+                    <h2>Wave33</h2>
+                    <p>Puts his girl first before us troopers which I appreciate. Mostly agreeable, haves fun while going with the flow, hence the name wave.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="5" data-bytime="201603">
+                <img class="main-img" src="images\yookie.jpg"/>
+                <div class="card-content">
+                    <h2>Yookie</h2>
+                    <p>Amazing singer with a friendly personality whom I had a lot of fun on karaoke sessions. I just wish we could hang out more.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card glass" data-value="5" data-bytime="201509">
+                <img class="main-img" src="images\yoshibang.jpg"/>
+                <div class="card-content">
+                    <h2>YoshiBang</h2>
+                    <p>Our dear and intelligent friend who needs understanding the most. Has a bright personality with a fiery temper.</p>
+                    <div class="heart-meter">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="rgb-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                        <img class="no-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerthree">
+            <div class="card glass" data-value="10" data-bytime="201699">
+                <img class="main-img" src="images\eye5.jpg"/>
+                <div class="card-content">
+                    <h2>[REDACTED]</h2>
+                    <p>I am sorry.</p>
+                    <div class="heart-meter">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                        <img class="black-heart" src="images\mdi_heart.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
