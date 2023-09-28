@@ -1,10 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html, body { 
+html, body{ 
     display: flex;
     width:100%;
     background-color:#121212;
@@ -14,11 +13,9 @@ html, body {
     font-family: Roboto, sans-serif;
     /*overflow: auto;*/
 }
-
 body::-webkit-scrollbar{
     display: none;
-  }
-
+}
 .containerone{
     display: flex;
     background-color:#1e1e1e;
@@ -28,7 +25,6 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     align-items: center;
 }
-
 .header{
     display: flex;
     flex-direction: column;
@@ -37,7 +33,6 @@ body::-webkit-scrollbar{
     animation: rgbColor 6s linear infinite;
     margin: 40px;
 }
-
 .container-sorter{
     display: flex;
     width: 66vw;
@@ -49,8 +44,7 @@ body::-webkit-scrollbar{
     /*overflow: auto;*/
 
 }
-
-.container-sorter button{
+.container-sorter button, .scroll-button{
     width: 140px;
     height: 30px;
     background-color: transparent;
@@ -59,7 +53,9 @@ body::-webkit-scrollbar{
     border-width: 0.1rem;
     color: white;
 }
-
+.button-mobile{
+    display: none;
+}
 .containertwo{
     display: flex;
     width: 66vw;
@@ -70,32 +66,26 @@ body::-webkit-scrollbar{
     gap: 50px 0;
     margin: 50px;
     /*overflow: auto;*/
-
 }
-
-.lrxs-main {
+.lrxs-main{
     padding: 0 50px;
     color: white;
 }
-
-nav {
+nav{
     padding: 0 50px;
 }
-
-.nav-links li {
+.nav-links li{
     display: inline-block;
     padding: 0 20px;
     text-decoration: none;
     color: white;
     list-style-type: none;
 }
-
 .nav-links li a{
     text-decoration: none;
     color: white;
 }
-
-.card {
+.card{
     display: flex;
     width: 800px;
     height: 200px;
@@ -104,8 +94,7 @@ nav {
     border-radius: 10px;
     align-items: center;
 }
-
-.glass {
+.glass{
     /* From https://css.glass */
     background: rgba(30, 30, 30, 0.54);
     border-radius: 16px;
@@ -113,7 +102,6 @@ nav {
     backdrop-filter: blur(7.9px);
     -webkit-backdrop-filter: blur(7.9px);   
 }
-
 .card .main-img{
     display: flex;
     width: 160px;
@@ -127,8 +115,7 @@ nav {
     margin-left: 40px;
     filter: grayscale(100%);
 }
-
-.card-content {
+.card-content{
     width: 100%;
     height: 100%;
     display: flex;
@@ -139,19 +126,14 @@ nav {
     color: white;
     text-align: center;
     gap: 30px;
-
 }
 .card-content h2{
     max-width: 500px;
-
 }
-
 .card-content p{
     max-width: 500px;
-
 }
-
-.heart-meter {
+.heart-meter{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,25 +141,19 @@ nav {
     align-content: center;
     gap: 10px;
 }
-
 .rgb-heart, .black-heart{
     filter: invert(100%) sepia(0%) saturate(6666%) hue-rotate(194deg) brightness(93%) contrast(91%);
     opacity: 0.5;
 }
-
-.no-heart {
+.no-heart{
     filter: invert(0%) sepia(19%) saturate(6355%) hue-rotate(43deg) brightness(79%) contrast(86%);
 }
-
-
-
 .heart-meter img{
     max-width: 40px;
     max-height: 40px;
     width: 40px;
     height: 40px;
 }
-
 .containerthree{
     display: flex;
     width: 66vw;
@@ -186,104 +162,98 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 50px 0;
+    margin-bottom: 50px;
     /*overflow: auto;*/
 }
-
 /* -----Hover actions----- */
-.container-sorter button:hover{
-    width: 140px;
-    height: 30px;
+.container-sorter button:hover, .scroll-button:hover{
     animation: rgbColorSvg 6s linear infinite;
-    border-radius: 15px;
-    border-color: white;
-    border-width: 0.1rem;
-    color: white;
 }
-
 .header:hover h1{
     color: white;
 }
-
+.card:hover{
+    background-color:rgb(37, 37, 37);
+}
 .card:hover img{
     filter: grayscale(0%);
 }
-
 .card:hover .no-heart{
     filter: invert(0%) sepia(19%) saturate(6355%) hue-rotate(43deg) brightness(79%) contrast(86%);
 }
-
 .card:hover .rgb-heart{
     /*fallback red color
     filter: invert(27%) sepia(63%) saturate(2259%) hue-rotate(326deg) brightness(90%) contrast(105%);*/
     animation: rgbColorSvg 6s linear infinite;
     opacity: 1;
 }
-
 .card:hover .black-heart{
     /*fallback red color
     filter: invert(27%) sepia(63%) saturate(2259%) hue-rotate(326deg) brightness(90%) contrast(105%);*/
     animation: blackColor 3s linear infinite;
     opacity: 1;
 }
-
 /* -----Animations----- */
 @keyframes rgbColor {
-    0% {
-        color: #4D9DE0;
-    }
-    12.5% {
-        color: #E15554;
-    }
-    37.5% {
-        color: #E1BC29;
-    }
-    62.5% {
-        color: #3BB273;
-    }
-    87.5% {
-        color: #7768AE;
-    }
-    100% {
-        color: #4D9DE0;
-    }
+    0% {color: #4D9DE0;}
+    12.5% {color: #E15554;}
+    37.5% {color: #E1BC29;}
+    62.5% {color: #3BB273;}
+    87.5% {color: #7768AE;}
+    100% {color: #4D9DE0;}
 }
-
 @keyframes rgbColorSvg {
-    0% {
-        filter: invert(65%) sepia(17%) saturate(5132%) hue-rotate(181deg) brightness(92%) contrast(89%);
-    }
-    12.5% {
-        filter: invert(45%) sepia(30%) saturate(1188%) hue-rotate(314deg) brightness(96%) contrast(94%);
-    }
-    37.5% {
-        filter: invert(97%) sepia(40%) saturate(6296%) hue-rotate(333deg) brightness(92%) contrast(90%);
-    }
-    62.5% {
-        filter: invert(57%) sepia(9%) saturate(2778%) hue-rotate(96deg) brightness(103%) contrast(85%);
-    }
-    87.5% {
-        filter: invert(45%) sepia(13%) saturate(1598%) hue-rotate(212deg) brightness(93%) contrast(90%);
-    }
-    100% {
-        filter: invert(65%) sepia(17%) saturate(5132%) hue-rotate(181deg) brightness(92%) contrast(89%);
-    }
+    0% {filter: invert(65%) sepia(17%) saturate(5132%) hue-rotate(181deg) brightness(92%) contrast(89%);}
+    12.5% {filter: invert(45%) sepia(30%) saturate(1188%) hue-rotate(314deg) brightness(96%) contrast(94%);}
+    37.5% {filter: invert(97%) sepia(40%) saturate(6296%) hue-rotate(333deg) brightness(92%) contrast(90%);}
+    62.5% {filter: invert(57%) sepia(9%) saturate(2778%) hue-rotate(96deg) brightness(103%) contrast(85%);}
+    87.5% {filter: invert(45%) sepia(13%) saturate(1598%) hue-rotate(212deg) brightness(93%) contrast(90%);}
+    100% {filter: invert(65%) sepia(17%) saturate(5132%) hue-rotate(181deg) brightness(92%) contrast(89%);}
 }
-
 @keyframes blackColor {
-    0% {
-        filter: invert(0%) sepia(6%) saturate(6726%) hue-rotate(324deg) brightness(84%) contrast(86%);
-    }
-    50% {
-        filter: invert(27%) sepia(0%) saturate(2743%) hue-rotate(196deg) brightness(84%) contrast(86%);
-    }
-    100% {
-        filter: invert(0%) sepia(6%) saturate(6726%) hue-rotate(324deg) brightness(84%) contrast(86%);
-    }
+    0% {filter: invert(0%) sepia(6%) saturate(6726%) hue-rotate(324deg) brightness(84%) contrast(86%);}
+    50% {filter: invert(27%) sepia(0%) saturate(2743%) hue-rotate(196deg) brightness(84%) contrast(86%);}
+    100% {filter: invert(0%) sepia(6%) saturate(6726%) hue-rotate(324deg) brightness(84%) contrast(86%);}
 }
-
 /* -----@Media----- */
 @media (max-width:800px) {
-
+    body{
+        font-size: smaller;
+    }
+    nav {
+        padding: 0 20px;
+    }
+    .nav-links li {
+        display: inline-block;
+        padding: 0 15px;
+        text-decoration: none;
+        color: white;
+        list-style-type: none;
+    }
+    .button-default{
+        display: none;
+    }
+    .button-mobile{
+        display: inline-block;
+    }
+    .container-sorter button{
+        width: 140px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 15px;
+        border-color: white;
+        border-width: 0.1rem;
+        color: white;
+    }
+    .container-sorter button:hover{
+        width: 140px;
+        height: 30px;
+        animation: rgbColorSvg 6s linear infinite;
+        border-radius: 15px;
+        border-color: white;
+        border-width: 0.1rem;
+        color: white;
+    }
     .containertwo{
         display: flex;
         width: 100vw;
@@ -293,10 +263,7 @@ nav {
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        font-size: smaller;
-    
     }
-
     .card {
         width: 90vw;
         height: 200px;
@@ -304,7 +271,6 @@ nav {
         z-index: 1;
         border-radius: 10px;
     }
-
     .card .main-img{
         display: flex;
         width: 80px;
@@ -318,12 +284,10 @@ nav {
         margin-left: 25px;
         filter: grayscale(100%);
     }
-
     .card-content p{
         max-width: 250px;
     
     }
-
     .glass {
         /* From https://css.glass */
         background: rgba(30, 30, 30, 0.54);
@@ -332,7 +296,6 @@ nav {
         backdrop-filter: blur(7.9px);
         -webkit-backdrop-filter: blur(7.9px);   
     }
-
     .heart-meter {
         width:200px;
         display: flex;
@@ -342,7 +305,6 @@ nav {
         align-content: center;
         gap: 5px;
     }
-
     .heart-meter img{
         max-width: 20px;
         max-height: 20px;
@@ -350,3 +312,16 @@ nav {
         height: 20px;
     }
 }
+/*
+Ranks
+10 - Confidante
+9 - Kindred Spirit
+8 - Best Friend
+7 - Close Friend
+6 - Great Friend
+5 - Good Friend
+4 - Friend
+3 - Recent Friend
+2 - Acquaintance
+1 - Business Contact
+*/
