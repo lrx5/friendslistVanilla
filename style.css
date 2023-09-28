@@ -33,6 +33,14 @@ body::-webkit-scrollbar{
     animation: rgbColor 6s linear infinite;
     margin: 40px;
 }
+.ranks-container{
+    display: flex;
+    justify-content: center;
+    gap: 0px 20px;
+}
+.ranks{
+    text-align: left;
+}
 .container-sorter{
     display: flex;
     width: 66vw;
@@ -312,16 +320,3 @@ nav{
         height: 20px;
     }
 }
-/*
-Ranks
-10 - Confidante
-9 - Kindred Spirit
-8 - Best Friend
-7 - Close Friend
-6 - Great Friend
-5 - Good Friend
-4 - Friend
-3 - Recent Friend
-2 - Acquaintance
-1 - Business Contact
-*/
