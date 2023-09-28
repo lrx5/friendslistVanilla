@@ -7,39 +7,32 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <title>Vanilla List</title>
     </head>
-
     <body>
         <!-- Nav container -->
         <div class="containerone">
             <h2 class="lrxs-main">LRXS</h2>
             <nav>
                 <ul class="nav-links">
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#in">In</a>
-                    </li>
-                    <li>
-                        <a href="#progress">Progress</a>
-                    </li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#in">In</a></li>
+                    <li><a href="#progress">Progress</a></li>
                 </ul>
-            </nav>
-            
+            </nav> 
         </div>
-
         <div class="header">
             <h1>The friends that I truly care about</h1>
             <p>If you see yourself here, then you are definitely kept in mind.</p>
         </div>
-
         <div class="container-sorter">
-            <button onclick="sortCardsValueLH()" id="sort-button">Lowest To Highest</button>
-            <button onclick="sortCardsValueHL()" id="sort-button">Highest To Low</button>
-            <button onclick="sortCardsDateON()" id="sort-button">Oldest To Newest</button>
-            <button onclick="sortCardsDateNO()" id="sort-button">Newest To Oldest</button>
+            <button class="button-default" onclick="sortCardsValueLH()" id="sort-button">Lowest To Highest</button>
+            <button class="button-default" onclick="sortCardsValueHL()" id="sort-button">Highest To Low</button>
+            <button class="button-default" onclick="sortCardsDateON()" id="sort-button">Oldest To Newest</button>
+            <button class="button-default" onclick="sortCardsDateNO()" id="sort-button">Newest To Oldest</button>
+            <button class="button-mobile" onclick="sortCardsValueLH()" id="sort-button">0 to 10</button>
+            <button class="button-mobile" onclick="sortCardsValueHL()" id="sort-button">10 to 0</button>
+            <button class="button-mobile" onclick="sortCardsDateON()" id="sort-button">O > N</button>
+            <button class="button-mobile" onclick="sortCardsDateNO()" id="sort-button">N > O</button>
         </div>
-
         <!-- Main Body -->
         <div id="containertwo" class="containertwo">
             <div class="card glass" data-value="4" data-bytime="201602">
@@ -236,7 +229,7 @@
                 <img class="main-img" src="images\kajell.jpg"/>
                 <div class="card-content">
                     <h2>Kajell</h2>
-                    <p>A friend of Nyx, she is also a chill gamer who plays casual games like Phasmophobia.</p>
+                    <p>Friends with Nyx, she is also a relatively calm gamer who plays casual genres with friends.</p>
                     <div class="heart-meter">
                         <img class="rgb-heart" src="images\mdi_heart.svg">
                         <img class="rgb-heart" src="images\mdi_heart.svg">
@@ -464,7 +457,7 @@
                 <img class="main-img" src="images\tigris.jpg"/>
                 <div class="card-content">
                     <h2>Tigris</h2>
-                    <p>Our interests in tanks and world war history makes our friendship battle hardened; tough as nails.</p>
+                    <p>Combining our interests in tanks and world war history makes our lines of friendship battle hardened; tough as nails.</p>
                     <div class="heart-meter">
                         <img class="rgb-heart" src="images\mdi_heart.svg">
                         <img class="rgb-heart" src="images\mdi_heart.svg">
@@ -557,8 +550,8 @@
                     </div>
                 </div>
             </div>
+            <button id="scrollToTopButton" class="scroll-button"> ^ </button>
         </div>
-
     </body>
     <script src="script.js"></script>
 </html>
