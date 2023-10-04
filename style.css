@@ -33,6 +33,10 @@ body::-webkit-scrollbar{
     animation: rgbColor 6s linear infinite;
     margin: 40px;
 }
+.mobile{
+    display: none;
+    visibility: hidden;
+}
 .ranks-container{
     display: flex;
     justify-content: center;
@@ -244,6 +248,14 @@ nav{
     .button-mobile{
         display: inline-block;
     }
+    .desktop{
+        display: none;
+        visibility: hidden;
+    }
+    .mobile{
+        display:block;
+        visibility: visible;
+    }
     .container-sorter button{
         width: 140px;
         height: 30px;
@@ -293,7 +305,7 @@ nav{
         filter: grayscale(100%);
     }
     .card-content p{
-        max-width: 250px;
+        max-width: 220px;
     
     }
     .glass {
@@ -320,3 +332,16 @@ nav{
         height: 20px;
     }
 }
+/*
+Ranks
+10 - Confidante
+9 - Kindred Spirit
+8 - Best Friend
+7 - Close Friend
+6 - Great Friend
+5 - Good Friend
+4 - Friend
+3 - Recent Friend
+2 - Acquaintance
+1 - Business Contact
+*/
